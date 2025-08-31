@@ -1,0 +1,12 @@
+# IIT BHU Placement Dashboard Environment Variables
+# Copy this file to .env and fill in your actual session IDs
+
+# PPO Scraper Session ID
+PPO_SESSION_ID=your_ppo_session_id_here
+
+# Internship Scraper Session ID  
+INTERNSHIP_SESSION_ID=your_internship_session_id_here
+
+# Flask Configuration
+FLASK_ENV=production
+FLASK_DEBUG=false
