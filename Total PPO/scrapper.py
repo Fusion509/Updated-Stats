@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import streamlit as st
 
 BASE_URL = "https://placement.iitbhu.ac.in"
 LISTING_URL = f"{BASE_URL}/forum/c/notice-board/2025-26/"
@@ -9,7 +10,7 @@ MAX_PAGES = 9
 import os
 
 # Get session ID from environment variable
-SESSION_ID = os.getenv('PPO_SESSION_ID')
+SESSION_ID = st.secrets["PPO_SESSION_ID"]
 cookies = {"sessionid": SESSION_ID}
 
 ROLL_PATTERN = re.compile(r"\b\d{8}\b")  # IIT BHU roll numbers are 8 digits
